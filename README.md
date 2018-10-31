@@ -57,7 +57,7 @@ dependencies {
 #### Caveats
 * Will not download/resolve in-line images in the message body.
 * Ignores attachment files.
-* Handles only mimetypes that are text/plain, multipart/alternative, multipart/mixed, multipart/related. 
+* Handles only mimetypes that are text/plain, text/html, multipart/alternative, multipart/mixed, multipart/related. 
 
 #### Useful References
 * [Advanced Search Syntax for Messages](https://support.google.com/mail/answer/7190?hl=en) 
