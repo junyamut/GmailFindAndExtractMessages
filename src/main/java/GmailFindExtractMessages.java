@@ -35,8 +35,11 @@ public class GmailFindExtractMessages {
 	    	messages.addAll(response.getMessages());
 	    	if (response.getNextPageToken() != null) {
 	    		String pageToken = response.getNextPageToken();
-	    		response = service.users().messages().list(userId).setQ(query)
-	    				.setPageToken(pageToken).execute();
+	    		response = service.users().messages()
+	    				.list(userId)
+	    				.setQ(query)
+	    				.setPageToken(pageToken)
+	    				.execute();
 	    	} else {
 	    		break;
 	    	}
