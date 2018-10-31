@@ -1,0 +1,21 @@
+{
+  "app": {
+    "name": "Gmail Find and Extract Messages", 
+    "outputDir": "results"
+  }, 
+  "oauth": {
+    "accessType": "offline", 
+    "approvalPrompt": "force", 
+    "credentialsFilePath": "/credentials.json", 
+    "port": 8888, 
+    "scopes": {
+      "required": [
+        "https://www.googleapis.com/auth/gmail.readonly", 
+        "https://www.googleapis.com/auth/gmail.modify"
+      ]
+    }, 
+    "tokensDirectoryPath": "tokens", 
+    "userId": "me"
+  }, 
+  "query": "in:inbox after:2018/10/28 'this is a test'"
+}

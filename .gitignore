@@ -1,0 +1,13 @@
+bin/*
+build/*
+gradle/*
+results/*
+src/main/resources/credentials.json
+tokens/*
+.gradle/*
+.settings/*
+gradlew
+gradlew.bat
+settings.gradle
+.classpath
+.project
