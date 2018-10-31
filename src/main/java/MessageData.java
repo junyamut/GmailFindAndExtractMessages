@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
@@ -10,9 +9,7 @@ import helper.MessageHelper;
 
 public class MessageData {	
 	
-	public MessageData() {	
-		
-	}
+	public MessageData() { }
 	
 	public String getData(Message message, String mimeType) {
 		String data = new String();
@@ -26,11 +23,7 @@ public class MessageData {
 			case MessageHelper.MIMETYPE_MULTIPART_MIXED:
 			case MessageHelper.MIMETYPE_MULTIPART_RELATED:
 			default:
-				try {
-					assembleDataFromMessageParts(message.getPayload().getParts(), dataBuilder);
-				} catch (IOException e) {
-					System.out.println("Cannot get message data: " + e.getMessage());
-				}
+				assembleDataFromMessageParts(message.getPayload().getParts(), dataBuilder);
 				
 		}
 		try {
@@ -41,7 +34,7 @@ public class MessageData {
 		return data;
 	}
 	
-	private void assembleDataFromMessageParts(List<MessagePart> messageParts, StringBuilder stringBuilder) throws IOException {
+	private void assembleDataFromMessageParts(List<MessagePart> messageParts, StringBuilder stringBuilder) {
 	    for (MessagePart messagePart : messageParts) {
 	        if (messagePart.getMimeType().equals("text/html")) {
 	        	stringBuilder.append(messagePart.getBody().getData());
