@@ -55,7 +55,7 @@ dependencies {
 }
 ```
 #### Caveats
-* Will not download/resolve in-line images in the message body.
+* Has issues for quoted-printable encoded emails.
 * Ignores attachment files.
 * Handles only mimetypes that are text/plain, text/html, multipart/alternative, multipart/mixed, multipart/related. 
 

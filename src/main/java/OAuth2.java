@@ -13,7 +13,6 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 
 import model.Scopes;
 
-
 public class OAuth2 {
 	private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
 	
