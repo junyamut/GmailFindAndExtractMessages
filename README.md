@@ -1,5 +1,5 @@
 # Gmail Find and Extract Messages
-## (terminal application only)
+#### (terminal application only)
 
 *Description: A simple terminal app to find messages in your Gmail, extract message body, and saves it as HTML or text files.*
 
