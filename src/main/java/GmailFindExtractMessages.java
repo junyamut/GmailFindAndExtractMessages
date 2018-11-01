@@ -56,7 +56,10 @@ public class GmailFindExtractMessages {
 					message.getId());
 			messageHelper = new MessageHelper(message);
 			messageData = new MessageData();
-			fileName = new CreateFileName(messageHelper.getSubject(), messageHelper.getInternalDate(), messageHelper.getMimeType());
+			fileName = new CreateFileName(
+					messageHelper.getSubject(), 
+					messageHelper.getInternalDate(), 
+					messageHelper.getMimeType());
 			fileName.create();
 			writeToFile = new WriteToFile.WriteToFileBuilder()
 					.outputDir(Properties.getProperties().getApp().getOutputDir())
