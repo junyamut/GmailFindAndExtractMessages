@@ -5,7 +5,9 @@
 
 ## Intro
 
-Originally intended this to grab all of my emails from Grab receipts and Sunlife MF NAVPS reports, then save it to files. In the near future, will write another utility app to parse and collate all the data to Google Spreadsheets so I can keep track of my fare spendings and MF activities.
+Originally intended this to grab all of my emails from Grab e-receipts and Sunlife MF NAVPS reports, then save it to files. In the near future, will write another utility app to parse and collate all the data to ~~Google Spreadsheets~~ an Excel spreadsheet so I can keep track of my fare spending and MF activities.
+
+*To extract data from Grab e-receipts - [Extract Ride Details from Grab E-Receipt](https://github.com/junyamut/ExtractRideDetailsGrabEReceipt)*
 
 ## Searching for Messages
 Search syntax follows Gmail's advanced search. Read the appropriate Useful References section below for explanation on how it works.
