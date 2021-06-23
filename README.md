@@ -1,6 +1,8 @@
 # Gmail Find and Extract Messages
 #### (terminal application only)
 
+### Note: _This will probably not work as is anymore since the HTML formatting for email receipts from Grab has already changed_
+
 *Description: A simple terminal app to find messages in your Gmail, extract message body, and saves it as HTML or text files.*
 
 ## Intro
